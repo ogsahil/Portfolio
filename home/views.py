@@ -7,4 +7,14 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse("Hey this is my first project on Django!")
+    peoples = [
+    {'name':'sahil nayak', 'age': 18},
+    {'name':'Ritika gupta', 'age': 19},
+    {'name':'Arpeeta mahapatra', 'age': 18}
+    ]
+    
+    return render(request , "home/template/index.html", context= {'people': peoples})
+
+    
+
+
