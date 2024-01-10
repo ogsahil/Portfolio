@@ -13,7 +13,7 @@ def home(request):
     {'name':'Arpeeta mahapatra', 'age': 18}
     ]
     
-    return render(request , "home/template/index.html", context= {'people': peoples})
+    return render(request , "index.html", context= {'people': peoples})
 
     
 
